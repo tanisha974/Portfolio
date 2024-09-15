@@ -1,5 +1,5 @@
-// Smooth Scroll Function
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+// JavaScript to handle smooth scrolling
+document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
         document.querySelector(this.getAttribute('href')).scrollIntoView({

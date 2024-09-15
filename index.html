@@ -1,59 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanisha's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tanisha's Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    </head>
+    
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>Hi, I'm Tanisha</h1>
-        <p>Aspiring Data Analyst</p>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="c:\Users\tanis\OneDrive\Pictures\Documents\tanisharesume.pdf" class="resume-btn">Download Resume</a></li>
             </ul>
         </nav>
+        <div class="header-content">
+            <h1>Hello <br> I'm Tanisha</h1>
+            <p>Aspiring Data Analyst</p>
+            <p>Welcome to my portfolio. I am passionate about transforming data into actionable insights. Explore my work and get in touch!</p>
+            <a href="#contact" class="cta-btn">Get in Touch</a>
+        </div>
     </header>
+   <!-- Home Section -->
+<section id="home">
+    <div class="home-content">
+        <h1>Welcome to My Profile</h1>
+        <p class="intro-text">Aspiring Data Analyst with a passion for transforming raw data into actionable insights.</p>
+        <p class="home-description">
+            I specialize in extracting meaningful data patterns, creating visualizations, and helping organizations make data-driven decisions. My goal is to bring clarity to data through comprehensive analysis and effective storytelling.
+        </p>
+    </div>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a fresher with a passion for data analytics, recently graduated with a BCA degree and pursuing an MCA at JSS University. I have hands-on experience in Python, SQL, and data visualization tools like Power BI.</p>
-    </section>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
+<!-- Skills Section -->
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Data Analysis & Tools</h3>
+            <ul>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Power BI</li>
+                <li>Excel</li>
+            </ul>
+        </div>
+
+        <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Collaboration</li>
+                <li>Time Management</li>
+                <li>Problem-Solving</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Project Section -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-container">
+        <div class="project-card">
             <h3>Bank Churn Analysis</h3>
-            <p>Developed a machine learning model to predict customer churn using Python.</p>
-            <a href="https://github.com/yourusername/bank-churn-analysis" target="_blank">View on GitHub</a>
+            <p>
+                A machine learning project focused on analyzing customer churn rates in the banking industry using Python and various data manipulation tools.
+            </p>
         </div>
-        <div class="project">
+
+        <div class="project-card">
             <h3>Online Quiz Management System</h3>
-            <p>Built a web-based quiz management system to handle quizzes and results.</p>
-            <a href="https://github.com/yourusername/quiz-management-system" target="_blank">View on GitHub</a>
+            <p>
+                Developed an interactive web-based system for managing quizzes, incorporating features for user login, question management, and score tracking.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>
+                A fully responsive and animated portfolio website built with HTML, CSS, and JavaScript, featuring smooth transitions and modern design.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
         </div>
     </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: tanisha@example.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Connect with me</a></p>
-    </section>
-
-    <!-- Footer Section -->
+    
     <footer>
-        <p>© 2024 Tanisha. All rights reserved.</p>
+        <p>&copy; 2024 Tanisha. All rights reserved.</p>
+        <p> tanisha9786@gmail.com </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tanisha974/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/tanisha974" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
+    
+    <script src="scripts.js"></script>
 </body>
 </html>
